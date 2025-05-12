@@ -37,12 +37,16 @@ function AddToCart({ product }) {
   };
 
   return (
-    <button
-      className={`${styles.button} ${added ? styles.added : ""}`}
-      onClick={added ? handleRemoveCart : handleAddCart}
-    >
-      {added ? " წაშლა კალათიდან" : " კალათაში დამატება"}
-    </button>
+    <div className={styles.card}>
+      <img src={product.image} alt={product.title} className={styles.image} />
+      <h2 className={styles.title}>{product.title}</h2>
+      <button
+        className={`${styles.button} ${added ? styles.added : ""}`}
+        onClick={added ? handleRemoveCart : handleAddCart}
+      >
+        {added ? "წაშლა კალათიდან" : "კალათაში დამატება"}
+      </button>
+    </div>
   );
 }
 
