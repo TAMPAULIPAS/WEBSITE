@@ -1,7 +1,7 @@
 .image {
   border-radius: 50%;
-  border: 3px solid #e2e8f0;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fff;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -10,9 +10,8 @@
 
 .image:hover {
   transform: scale(1.08);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
 }
-
 
 .container {
   border-radius: 28px;
@@ -23,29 +22,30 @@
   flex-direction: column;
   gap: 32px;
   padding: 40px;
-  background: linear-gradient(135deg, #f7f9fc, #e2e8f0);
+  background: linear-gradient(135deg, #000, #111);
   animation: fadeIn 0.8s ease-in-out;
+  color: #fff;
 }
-
 
 .infoWrapper {
   display: flex;
   gap: 24px;
   padding: 16px 24px;
   border-radius: 16px;
-  border: 1px solid #d1d5db;
-  background-color: #1a1a1a;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fff;
+  background-color: #000;
+  box-shadow: 0 6px 24px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
 }
 
 .infoWrapper:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
 }
 
-
 .section {
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   padding: 5rem 2rem;
@@ -53,8 +53,9 @@
   align-items: center;
   justify-content: center;
   animation: slideUp 0.7s ease-in-out;
+  background-color: #000;
+  color: #fff;
 }
-
 
 @keyframes fadeIn {
   from {
@@ -77,6 +78,3 @@
     transform: translateY(0);
   }
 }
-
-
-

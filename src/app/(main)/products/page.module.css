@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  gap: 60px;
+  gap: 20px;
   overflow-x: auto;
   padding: 60px;
   scroll-snap-type: x mandatory;

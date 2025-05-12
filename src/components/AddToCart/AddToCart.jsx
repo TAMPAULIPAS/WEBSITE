@@ -41,7 +41,7 @@ function AddToCart({ product }) {
       className={`${styles.button} ${added ? styles.added : ""}`}
       onClick={added ? handleRemoveCart : handleAddCart}
     >
-      {added ? "❌ წაშლა კალათიდან" : "🛒 კალათაში დამატება"}
+      {added ? " წაშლა კალათიდან" : " კალათაში დამატება"}
     </button>
   );
 }

@@ -24,7 +24,21 @@ function page() {
     localStorage.setItem("products", JSON.stringify([...products]));
   };
 
-  const handleRemoveOne = async (product) => {};
+  const handleRemoveOne = async (product) => {
+    const products = await JSON.parse(localStorage.getItem("products"));
+    const index = products.findIndex((item) => item.product.id === product.id);
+
+    if (index !== -1) {
+      if (products[index].count > 1) {
+        products[index].count--;
+      } else {
+        products.splice(index, 1);
+      }
+
+      setCartProducts(products);
+      localStorage.setItem("products", JSON.stringify([...products]));
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -37,7 +51,7 @@ function page() {
             alt={prod.product.title}
           />
           <div>
-            <h4> {prod.product.title}</h4>
+            <h4>{prod.product.title}</h4>
             <br />
             <p>{prod.count} ცალი</p>
           </div>

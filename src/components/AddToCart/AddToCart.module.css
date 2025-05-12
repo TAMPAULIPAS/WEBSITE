@@ -1,92 +1,31 @@
 .button {
-  padding: 14px 28px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: rgb(0, 0, 0);
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: 0.4px;
+  padding: 12px 20px;
+  background-color: #0070f3;
+  color: white;
   border: none;
   border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.35);
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
+  transition: all 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  box-shadow: 0 4px 14px rgba(0, 118, 255, 0.39);
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #5a6edc, #6f4dd4);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 26px rgba(102, 126, 234, 0.5);
-}
-
-.button:active {
-  transform: scale(0.96);
-}
-
-.button::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.6s ease, height 0.6s ease;
-  z-index: -1;
-}
-
-.button:active::after {
-  width: 220px;
-  height: 220px;
+  background-color: #005bb5;
+  transform: scale(1.02);
 }
 
 .added {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  color: rgb(0, 0, 0);
-  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
-  transform: translateY(-1px);
-  transition: all 0.3s ease;
+  background-color: #f31260;
+  box-shadow: 0 4px 14px rgba(255, 0, 0, 0.25);
 }
 
 .added:hover {
-  background: linear-gradient(135deg, #1ea756, #128c43);
-  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.5);
-  transform: translateY(-2px);
-}
-.messageStyle::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.6s ease, height 0.6s ease;
-  z-index: -1;
-}
-
-.messageStyle:active::after {
-  width: 220px;
-  height: 220px;
-}
-.messageStyle {
-  background-color: rgb(0, 0, 0) !important;
-  color: black !important;
-  font-weight: 600;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transform: translateY(-1px);
-  transition: all 0.3s ease;
-  border: 2px solid #ccc;
-}
-
-.messageStyle:hover {
-  background-color: #f9f9f9 !important;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  background-color: #c30d50;
+  transform: scale(1.02);
 }
