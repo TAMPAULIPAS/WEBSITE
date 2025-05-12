@@ -1,0 +1,114 @@
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #000000, #c8c8c8);
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.7s ease-in-out;
+}
+
+
+.signin {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #044586, #109ada);
+  border-radius: 30px;
+
+}
+
+.desc {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+.input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: border-color 0.3s;
+  background-color: rgba(181, 181, 181, 0.636);
+}
+
+.input:focus {
+  outline: rgb(0, 0, 0);
+  border-color: #000000;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+
+.button {
+  transform:scale(2px);
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #00d9ff, #013439);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #556cd6;
+}
+
+
+.notResgitered {
+  border: none;
+  background-color: transparent;
+  padding: 10px 0 0;
+  width: 100%;
+  margin-top: 1rem;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s;
+  height: 1rem ;
+}
+
+.notResgitered:hover {
+  color: #2a3f50;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
